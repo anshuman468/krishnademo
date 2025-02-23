@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="slideshow-container" style="max-height: 50vh; overflow: hidden;">
+            <div class="mySlides fade">
+                <img src="./images/IMG_7584.webp" style="width:100%; object-fit: cover;">
+            </div>
+            <div class="mySlides fade">
+                <img src="./images/IMG_7600.webp" style="width:100%; object-fit: cover;">
+            </div>
+            <div class="mySlides fade">
+                <img src="./images/IMG_7601.webp" style="width:100%; object-fit: cover;">
+            </div>
+            <!-- Add more slides as needed -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </header>
+
+    <main style="padding-top: 2rem;">
+        <h1>My Travel Photos</h1>
+        <div class="photo-gallery">
+            <img src="./images/IMG_7606.webp" alt="Main Photo 1">
+            <img src="./images/IMG_7603.webp" alt="Main Photo 2">
+            <img src="./images/IMG_7608.webp" alt="Main Photo 3">
+            <!-- Add more main photos as needed -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Follow me on:</p>
+        <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+        <a href="https://wa.me/yourwhatsappnumber" target="_blank">WhatsApp</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
