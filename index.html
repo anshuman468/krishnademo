@@ -27,10 +27,24 @@
     <main style="padding-top: 2rem;">
         <h1>My Travel Photos</h1>
         <div class="photo-gallery">
-            <img src="./images/IMG_7606.webp" alt="Main Photo 1">
-            <img src="./images/IMG_7603.webp" alt="Main Photo 2">
-            <img src="./images/IMG_7608.webp" alt="Main Photo 3">
-            <!-- Add more main photos as needed -->
+            <div class="photo-container">
+                <img src="./images/IMG_7606.webp" alt="Main Photo 1" onclick="showFullImage(this.src)">
+                <p class="photo-caption">Beautiful Sunset at the Beach</p>
+            </div>
+            <div class="photo-container">
+                <img src="./images/IMG_7603.webp" alt="Main Photo 2" onclick="showFullImage(this.src)">
+                <p class="photo-caption">Mountain View</p>
+            </div>
+            <div class="photo-container">
+                <img src="./images/IMG_7608.webp" alt="Main Photo 3" onclick="showFullImage(this.src)">
+                <p class="photo-caption">City Lights</p>
+            </div>
+        </div>
+
+        <!-- Modal for full-size image -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" class="modal-content">
         </div>
     </main>
 
